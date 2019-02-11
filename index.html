@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="style.css" rel="stylesheet"/>
+<Title>Movies for everyone</Title>
+</head>
+<body>
+<div id="wrapper">
+<header>
+<div id="page-banner">
+<h1 class="title">Moviemania</h1>
+<p>Movies for everyone</p>
+<form id="search-movies">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="search movies.."
+title="type in a name"/>
+</form>
+</div>
+</header>
+<div id="movie-list">
+<h2 class="title">Movies to watch</h2>
+<ul id="myUL">
+<li>
+<span class="name" >fight club</span>
+<span class="delete">delete</span>
+</li>
+<li>
+<span class="name" >Shawshank Redemption</span>
+<span class="delete">delete</span>
+</li>
+<li>
+<span class="name">secret life of walty mitty</span>
+<span class="delete">delete</span>
+</li>
+<li>
+<span class="name">dark knight</span>
+<span class="delete">delete</span>
+</li>
+</ul>
+</div>
+<form id="add-movie">
+<input type="checkbox" id="hide" onclick="showMe('movie-list', this)"/>
+<label for="hide">hide the list</label>
+<input type="text" placeholder="add a movie"/>
+<button onclick="myFunction()">add</button>
+</form>
+</div>
+<script src="java.js"></script>
+</body>
+</html>
