@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head><title>
+Form Validation
+</title>
+</head>
+<style>
+body{
+background-color:grey;
+}
+input:hover{background:silver;
+}
+
+div{
+
+text-align:center;
+margin:20px 0px 20px 0px;
+}
+h1{text-align:center;
+}
+
+.vd{
+font-size:30px;
+color:white;
+}
+legend{text-align:center;}
+
+</style>
+<body>
+
+<div class="vd">
+<form>
+<h1>Validation Form</h1>
+<b>
+Username:
+<br>
+<input type="text" placeholder="Enter Username" 
+oninvalid="alert('Invalid name!');"  required>
+<br><br>
+Email id:
+<br>
+<input type="email" name="email" 
+oninvalid="alert('Invalid email');" placeholder="email" required>
+<br><br>
+Mobile Number:<br>
+<input type="text" pattern="[0-9]{10}" name="phone"
+ oninvalid="alert('Invalid phone!');" placeholder="Phone" required>
+<br><br>
+Password:<br>
+  <input type="password" name="password" pattern=".{6,} "
+oninvalid="alert('Invalid password!');" placeholder="6 or greater" required>
+  <br><br>
+<input type="submit" value="Submit">
+</b>
+</form> 
+</div>
+<script>
+function alertfn(){
+alert("Info Saved!");
+}
+</script>
+</body>
